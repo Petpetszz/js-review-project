@@ -1,3 +1,6 @@
+// JOHN MIGUEL CABANTUGAN
+// BSIT 3F
+
 // ==== Todo CRUD MANAGEMENT ==== 
 
 // Array to store todos
@@ -16,12 +19,13 @@ function renderTodos() {
         li.className = 'todo-item';
         li.innerHTML = `
             <span>${todo}</span>
-            <button onlick="editTodo(${index})">Edit</button>
-            <button onlick="deleteTodo(${index})">Delete</button>
+            <button onclick="editTodo(${index})">Edit</button>
+            <button onclick="deleteTodo(${index})">Delete</button>
         `;
         todoList.appendChild(li);
     });
 }
+
 
 // Function to add a new todo
 function addTodo(event) {
